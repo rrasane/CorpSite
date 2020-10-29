@@ -18,9 +18,9 @@ pipeline {
         }
 
         stage('Test') {
-            environment {
+            /*environment {
               TOMCAT = credentials('tomcat_user')
-            }
+            }*/
         
             steps {
                 //snDevOpsStep()
@@ -41,9 +41,9 @@ pipeline {
         }
 
         stage('Publish') {
-            environment {
+            /*environment {
               TOMCAT = credentials('tomcat_user')
-            }
+            }*/
             
             steps {
                 sh 'echo publish stage'
